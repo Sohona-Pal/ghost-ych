@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: Arial, Helvetica, Sans-serif;
+}
+
+/* navbar section */
+.logo-img {
+    height: 30px;
+    width: 30px;
+    background-color: aliceblue;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 5%;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    align-items: center;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header section */
+.hero-section {
+    background-image: url('images/ghost_1.jpg');
+    height: 90vh;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-attachment: fixed;
+}
+
+.since {
+    color: rgb(251, 255, 0);
+    font-style: italic;
+}
+
+.heighlight {
+    color: rgb(128, 0, 0);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtext {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.hero-button {
+    background-color: rgb(255, 0, 242);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgba(250, 235, 215, 0.967);
+}
+
+.hero-button:hover {
+    background-color: darkorange;
+}
+
+/* specalities-section */
+.specalities-container {
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+}
+
+.specality img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid orangered;
+}
+
+.specality {
+    box-shadow: 0 9px 10px rgba(0, 115, 255, 0.577);
+    border-radius: 10px;
+}
+
+.specalities {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.specalities h2 {
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(255, 0, 179) 40%, rgb(0, 128, 128) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.specality p {
+    margin-bottom: 15px;
+}
+
+/* about section  */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: rgb(184, 255, 122);
+}
+
+.about-content {
+    padding-right: 40px;
+    max-width: 50%;
+}
+
+.about-content p {
+    color: rgb(0, 13, 255);
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.about-image img {
+    border-radius: 50%;
+}
+
+/* testimonial section */
+.testimonial img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonials {
+    display: flex;
+    padding: 50px 20px;
+}
+
+.testimonial {
+    text-align: center;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: bold;
+    color: orangered;
+    font-size: 1.2rem;
+}
+
+/* footer section */
+.footer {
+    background-color: black;
+    color: azure;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    padding: 2px;
+}
+
+.social-icons img:hover {
+    background-color: orangered;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    gap: 15px;
+    padding: 10px 20px;
+    position: relative;
+    left: 50px;
+}
+
+.footer-section h4 {
+    color: darkorange;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-left: 300px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 30px;
+}
+
+.footer-section p {
+    padding: 5px 0px;
+    cursor: pointer;
+    padding-left: 300px;
+}
+
+.call-btn {
+    background-color: rgb(255, 0, 242);
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.call-btn:hover {
+    background-color: darkorange;
+}
+
+@media(min-width:950px) {
+
+    .footer-section h4,
+    .footer-section p {
+        padding-left: 150px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .navbar {
+        flex-direction: column;
+        padding: 12px 0px;
+    }
+
+    .nav-links {
+        padding: 5px 0px;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtext {
+        font-size: 0.9rem;
+    }
+
+    .specalities-container {
+        flex-direction: column;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        height: 300px;
+        width: 300px;
+        padding-top: 10px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section p,
+    .footer-section h4 {
+        position: relative;
+        right: 35%;
+    }
+
+    .footer-logo {
+        left: 0;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width:581px) and(max-width:950px) {
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .subtext {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        margin-right: 30px;
+    }
+
+    .specalities-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .specality {
+        width: 45%;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-content {
+        max-width: 90%;
+        padding-right: 0;
+    }
+
+    .about-image img {
+        padding-top: 10px;
+    }
+
+    .testimonials {
+        flex-wrap: wrap;
+    }
+
+    .testimonial {
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section h4,
+    .footer-sectionp {
+        padding-left: 0;
+    }
+
+    .footer {
+        padding-top: 20px;
+    }
+
+    .footer-logo {
+        left: 0;
+    }
+}
